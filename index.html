@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <title>Mohamed Ahmed — Software & Game Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Mohamed Ahmed — Computer Science student, software developer, and game developer. Web & software, games & interactive, and experimental work."
+    />
+    <meta name="author" content="Mohamed Ahmed" />
+    <meta property="og:title" content="Mohamed Ahmed — Software & Game Developer" />
+    <meta
+      property="og:description"
+      content="Computer Science student, software developer, and game developer. Selected work across web, games, and experimental projects."
+    />
+    <meta property="og:type" content="website" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      #root {
+        height: 100%;
+      }
+    </style>
+    <!-- GitHub Pages SPA redirect: restores the deep-linked path after 404.html bounce -->
+    <script>
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
