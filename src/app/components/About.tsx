@@ -1,16 +1,8 @@
 import React, { useRef } from 'react';
-import { motion, useScroll, useTransform, useInView } from 'motion/react';
+import { motion } from 'motion/react';
 
 export const About = () => {
   const containerRef = useRef(null);
-  useInView(containerRef, { once: true, margin: "-100px" });
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"]
-  });
-
-  const opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
 
   return (
     <section ref={containerRef} id="about" className="py-32 relative bg-neutral-950 overflow-hidden">
@@ -110,7 +102,10 @@ export const About = () => {
 
           {/* Decorative Side */}
           <motion.div
-            style={{ opacity }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="relative lg:mt-24"
           >
             <div className="relative z-10">
@@ -140,8 +135,11 @@ export const About = () => {
               </motion.div>
 
               {/* Decorative Ring */}
-              <div className="absolute -bottom-12 -left-12 w-48 h-48 border border-white/10 rounded-full flex items-center justify-center hidden md:flex" style={{ animation: 'spin 15s linear infinite' }}>
-                <style dangerouslySetInnerHTML={{__html: `@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}} />
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
+                className="absolute -bottom-12 -left-12 w-48 h-48 border border-white/10 rounded-full items-center justify-center hidden md:flex"
+              >
                 <svg className="w-full h-full p-2" viewBox="0 0 100 100">
                   <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
                   <text className="fill-neutral-500 text-[10px] uppercase tracking-widest font-mono">
@@ -150,7 +148,7 @@ export const About = () => {
                     </textPath>
                   </text>
                 </svg>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
 
