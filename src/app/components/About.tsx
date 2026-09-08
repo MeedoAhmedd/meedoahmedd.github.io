@@ -76,6 +76,7 @@ export const About = () => {
 
             {/* Identity Tags */}
             <div className="mt-16 pt-16 border-t border-white/5">
+              <span className="text-xs font-mono uppercase tracking-widest text-neutral-600 block mb-6">Education</span>
               <div className="grid grid-cols-3 gap-8 mb-12">
                 <div className="space-y-2 border-r border-white/5">
                   <h4 className="text-2xl font-light text-white font-mono">GIU</h4>

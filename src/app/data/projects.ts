@@ -10,10 +10,8 @@
 //  subtitle      short descriptor (shown italic on the detail page)
 //  category      "WEB & SOFTWARE" | "GAMES & INTERACTIVE" | "EXPERIMENTAL"
 //  status        "COMPLETED" | "IN PROGRESS" | "PROTOTYPE" | "UNIVERSITY PROJECT"
-//  image         path to an image. Placeholder art lives in /public/projects.
-//                To use a real screenshot: drop a ~1600x1200 file into
-//                /public/projects and point `image` at it via asset().
-//                External URLs also work but are not recommended (they can break).
+//  image         cover image (project cards + detail hero). Files live in
+//                /public/projects. Point `image` at one via asset().
 //  year          string year
 //  description   1-2 sentence overview
 //  contribution  what *you* personally built
@@ -21,6 +19,9 @@
 //  github        repo URL, or null if not public / not available yet
 //  demo          live demo URL, or null
 //  details       optional deeper technical notes
+//  gallery       optional Screenshot[] shown in the "More Information" section
+//                of the detail page. Drop files in /public/projects and add
+//                { src: asset("projects/xyz.jpg"), caption: "..." } entries.
 // -----------------------------------------------------------------------------
 
 export type ProjectCategory =
@@ -32,6 +33,11 @@ export type ProjectCategory =
 // localhost at "/" and on GitHub Pages at "/mohamed-ahmed-portfolio/").
 export const asset = (p: string) =>
   `${import.meta.env.BASE_URL}${p.replace(/^\//, "")}`;
+
+export interface Screenshot {
+  src: string;
+  caption?: string;
+}
 
 export interface Project {
   id: string;
@@ -48,6 +54,7 @@ export interface Project {
   github: string | null;
   demo: string | null;
   details?: string;
+  gallery?: Screenshot[];
 }
 
 export const projects: Project[] = [
@@ -58,7 +65,11 @@ export const projects: Project[] = [
     subtitle: "Full-Stack Career Platform",
     category: "WEB & SOFTWARE",
     status: "UNIVERSITY PROJECT",
-    image: asset("projects/giu-nexus.svg"), // placeholder — replace with a real screenshot
+    image: asset("projects/giu-nexus.jpg"),
+    gallery: [
+      // Add real screenshots later, e.g.:
+      // { src: asset("projects/giu-nexus-dashboard.jpg"), caption: "Admin dashboard" },
+    ],
     year: "2024",
     description:
       "A MERN-based career platform connecting students, recruiters, and administrators, with AI-powered job recommendations built on Hugging Face sentence embeddings and cosine similarity.",
@@ -86,7 +97,8 @@ export const projects: Project[] = [
     subtitle: "Java Spring Boot Workflow Engine",
     category: "WEB & SOFTWARE",
     status: "IN PROGRESS",
-    image: asset("projects/workflow-engine.svg"), // placeholder — replace with a real screenshot
+    image: asset("projects/workflow-engine.jpg"),
+    gallery: [],
     year: "2025",
     description:
       "A Java Spring Boot workflow engine I am currently building, modelling workflows, states, transitions, and workflow instances from the ground up.",
@@ -113,7 +125,8 @@ export const projects: Project[] = [
     subtitle: "3D Horror / Adventure Game",
     category: "GAMES & INTERACTIVE",
     status: "PROTOTYPE",
-    image: asset("projects/haunted-forest.svg"), // placeholder — replace with a real screenshot
+    image: asset("projects/haunted-forest.jpg"),
+    gallery: [],
     year: "2024",
     description:
       "A Unity/C# 3D horror and adventure project. The player searches for a missing child, follows environmental clues, and must find three keys to open a cave gate.",
@@ -132,7 +145,8 @@ export const projects: Project[] = [
     subtitle: "First-Person 3D Search Game",
     category: "EXPERIMENTAL",
     status: "PROTOTYPE",
-    image: asset("projects/haystack-needle.svg"), // placeholder — replace with a real screenshot
+    image: asset("projects/haystack-needle.jpg"),
+    gallery: [],
     year: "2024",
     description:
       "A first-person 3D search-game concept: a huge farm covered in hay, and a single hidden needle to find. An experiment in scale and the absurdity of an impossible search.",

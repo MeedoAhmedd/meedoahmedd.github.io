@@ -33,7 +33,7 @@ src/
       site.ts              # <-- contact links, CV, email
   styles/                  # global CSS
 public/
-  projects/                # project images (placeholder SVGs, swap for real screenshots)
+  projects/                # project cover images + detail-page screenshots
   favicon.svg
   404.html                 # GitHub Pages SPA deep-link fallback
 ```
@@ -44,8 +44,10 @@ Edit `src/app/data/projects.ts` and add an entry to the `projects` array. Every
 field is documented at the top of that file. No component changes needed — the
 home page, the `/work` grid, filters, and the detail page all read from it.
 
-For the image, drop a ~1600×1200 file into `public/projects/` and point the
-`image` field at it with `asset("projects/your-file.png")`.
+For the cover image, drop a ~1600×1200 file into `public/projects/` and point
+the `image` field at it with `asset("projects/your-file.jpg")`. Add detail-page
+screenshots the same way via the optional `gallery` array (rendered as a "More
+Information" section on the project page).
 
 ### Updating links
 

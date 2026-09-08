@@ -153,6 +153,43 @@ export const ProjectDetail = () => {
           </div>
         </div>
 
+        {/* More Information — project screenshots */}
+        {project.gallery && project.gallery.length > 0 && (
+          <div className="border-t border-white/10 pt-16 mb-32">
+            <h2 className="text-2xl font-medium tracking-tight mb-3">More Information</h2>
+            <p className="text-sm font-mono uppercase tracking-widest text-neutral-600 mb-12">
+              Screenshots from {project.title}
+            </p>
+            <div className="grid sm:grid-cols-2 gap-6">
+              {project.gallery.map((shot, i) => (
+                <motion.figure
+                  key={i}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.08, duration: 0.7 }}
+                  className="group"
+                >
+                  <div className="aspect-[16/10] bg-neutral-900 overflow-hidden border border-white/5">
+                    <img
+                      src={shot.src}
+                      alt={shot.caption || `${project.title} screenshot ${i + 1}`}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-700"
+                    />
+                  </div>
+                  {shot.caption && (
+                    <figcaption className="mt-3 text-xs font-mono uppercase tracking-widest text-neutral-600">
+                      {shot.caption}
+                    </figcaption>
+                  )}
+                </motion.figure>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Next Project */}
         {nextProject && (
           <div className="border-t border-white/10 py-24">

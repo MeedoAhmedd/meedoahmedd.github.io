@@ -11,10 +11,10 @@ export const site = {
 
   // Real, confirmed
   email: "mohamedahmedmaxx1@gmail.com",
+  github: "https://github.com/MeedoAhmedd",
+  linkedin: "https://www.linkedin.com/in/mohamed-ahmed-642b38405",
 
-  // Placeholders — fill in when available
-  github: "", // e.g. "https://github.com/your-username"
-  linkedin: "", // e.g. "https://www.linkedin.com/in/your-handle"
+  // Placeholder — fill in when available
   cv: "", // e.g. "/cv.pdf" (place the file in /public)
 };
 
