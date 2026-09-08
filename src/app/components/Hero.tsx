@@ -137,6 +137,9 @@ export const Hero = () => {
           />
         </div>
       </motion.div>
+
+      {/* Blend the atmospheric tint into the flat section below — no hard seam */}
+      <div className="absolute inset-x-0 bottom-0 h-48 z-[1] pointer-events-none bg-gradient-to-b from-transparent to-neutral-950" />
     </section>
   );
 };
