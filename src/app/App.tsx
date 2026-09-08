@@ -11,6 +11,7 @@ import { Work } from './components/Work';
 import { ProjectDetail } from './components/ProjectDetail';
 import { CurrentlyBuilding } from './components/CurrentlyBuilding';
 import { Experience } from './components/Experience';
+import { ExperienceDetail } from './components/ExperienceDetail';
 import { Education } from './components/Education';
 import { Technologies } from './components/Technologies';
 
@@ -98,6 +99,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/work" element={<Work />} />
             <Route path="/work/:slug" element={<ProjectDetail />} />
+            <Route path="/experience" element={<ExperienceDetail />} />
           </Routes>
         </div>
       )}

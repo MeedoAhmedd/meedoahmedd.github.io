@@ -1,19 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
-
-const experienceItems = [
-  {
-    company: "Asset Technology Group",
-    role: "Software Engineering Intern",
-    period: "[ Add dates ]",
-    responsibilities: [
-      "[ Add specific responsibilities from internship ]",
-      "[ Add technologies used ]",
-      "[ Add projects or work completed ]"
-    ],
-    technologies: ["[ Add tech stack ]"]
-  }
-];
+import { ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { experience } from '../data/experience';
 
 export const Experience = () => {
   return (
@@ -41,7 +30,7 @@ export const Experience = () => {
           </motion.h2>
 
           <div className="space-y-16">
-            {experienceItems.map((item, index) => (
+            {experience.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
@@ -59,7 +48,7 @@ export const Experience = () => {
                 <p className="text-sm font-mono uppercase tracking-widest text-violet-400/80 mb-8">{item.role}</p>
 
                 <ul className="space-y-3 mb-8">
-                  {item.responsibilities.map((r, i) => (
+                  {item.highlights.map((r, i) => (
                     <li key={i} className="text-neutral-400 font-light flex items-start gap-3">
                       <span className="text-neutral-700 mt-1">—</span>
                       <span>{r}</span>
@@ -67,13 +56,21 @@ export const Experience = () => {
                   ))}
                 </ul>
 
-                <div className="flex flex-wrap gap-2">
-                  {item.technologies.map((tech) => (
-                    <span key={tech} className="text-[10px] font-mono uppercase tracking-widest text-neutral-600 px-3 py-1 border border-white/5">
+                <div className="flex flex-wrap gap-2 mb-10">
+                  {item.stack.map((tech) => (
+                    <span key={tech} className="text-[10px] font-mono uppercase tracking-widest text-neutral-500 px-3 py-1 border border-white/10">
                       {tech}
                     </span>
                   ))}
                 </div>
+
+                <Link
+                  to="/experience"
+                  className="group inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest border-b border-white/30 pb-2 hover:text-neutral-300 hover:border-white/60 transition-colors"
+                >
+                  More Information
+                  <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </Link>
               </motion.div>
             ))}
           </div>
