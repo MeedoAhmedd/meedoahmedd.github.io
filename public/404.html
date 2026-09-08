@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohamed Ahmed — Portfolio</title>
     <script>
       // GitHub Pages SPA fallback.
-      // Any unknown deep link (e.g. /mohamed-ahmed-portfolio/work/giu-nexus)
-      // 404s to this file; we stash the intended URL and bounce to the app root,
-      // where index.html restores it via history.replaceState.
+      // Any unknown deep link (e.g. /work/giu-nexus) 404s to this file;
+      // we stash the intended URL and bounce to the app root, where
+      // index.html restores it via history.replaceState.
       sessionStorage.redirect = location.href;
-      var base = '/mohamed-ahmed-portfolio/';
-      location.replace(location.origin + base);
+      location.replace(location.origin + '/');
     </script>
   </head>
   <body>

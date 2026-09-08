@@ -68,24 +68,24 @@ Opens at http://localhost:5173
 
 ```bash
 npm run build      # output in dist/
-npm run preview    # preview the production build locally (serves under the Pages base path)
+npm run preview    # preview the production build locally
 ```
 
 ## Deployment
 
-Deployed to **GitHub Pages** via GitHub Actions.
+Deployed to **GitHub Pages** as a user site via GitHub Actions.
 
+- The repo is named `meedoahmedd.github.io`, so Pages serves it from the domain
+  root — `base` in `vite.config.ts` is `/`.
 - Every push to `main` runs `.github/workflows/deploy.yml`, which builds the site
   and publishes `dist/` to Pages.
-- `vite.config.ts` sets `base: '/mohamed-ahmed-portfolio/'` in production so
-  assets resolve under the Pages sub-path.
 - `public/404.html` plus a small script in `index.html` handle SPA deep links on
   refresh (GitHub Pages has no server-side routing).
 
 **One-time setup:** repo → Settings → Pages → Build and deployment → Source:
 **GitHub Actions**.
 
-Live URL: `https://<github-username>.github.io/mohamed-ahmed-portfolio/`
+Live URL: <https://meedoahmedd.github.io/>
 
 ## License
 

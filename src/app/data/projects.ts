@@ -29,8 +29,9 @@ export type ProjectCategory =
   | "GAMES & INTERACTIVE"
   | "EXPERIMENTAL";
 
-// Resolve a path inside /public against the deploy base path (works both on
-// localhost at "/" and on GitHub Pages at "/mohamed-ahmed-portfolio/").
+// Resolve a path inside /public against the deploy base path.
+// The base is "/" (GitHub Pages user site), but this keeps the site
+// portable if it ever moves to a sub-path.
 export const asset = (p: string) =>
   `${import.meta.env.BASE_URL}${p.replace(/^\//, "")}`;
 
