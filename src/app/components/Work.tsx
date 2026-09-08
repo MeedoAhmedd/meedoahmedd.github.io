@@ -24,11 +24,11 @@ export const Work = () => {
             ← Back to Home
           </Link>
           <div className="flex flex-col md:flex-row justify-between md:items-end gap-8">
-            <h1 className="text-[2.75rem] sm:text-6xl md:text-9xl font-medium tracking-tighter leading-[0.9]">
+            <h1 className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-9xl font-medium tracking-tighter leading-[0.9]">
               Selected <br />
               <span className="italic font-serif text-neutral-500">Work</span>
             </h1>
-            <p className="text-neutral-500 font-light max-w-xs text-right font-mono text-sm">
+            <p className="text-neutral-500 font-light max-w-xs md:text-right font-mono text-sm">
               Projects, prototypes, and experiments built by Mohamed Ahmed.
             </p>
           </div>

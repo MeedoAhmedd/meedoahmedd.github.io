@@ -55,7 +55,7 @@ export const Hero = () => {
           transition={{ duration: 1, ease: "easeOut" }}
           className="mb-12"
         >
-          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-[9px] sm:text-xs font-mono tracking-wider sm:tracking-widest uppercase text-neutral-400 max-w-full">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-[10px] sm:text-xs font-mono tracking-wider sm:tracking-widest uppercase text-neutral-400 max-w-[calc(100vw-3rem)]">
             <span className="relative flex h-2 w-2 shrink-0">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
@@ -69,7 +69,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[3.25rem] sm:text-7xl md:text-[11rem] font-medium tracking-tighter leading-[0.85] mb-6 text-white"
+          className="text-[3.25rem] sm:text-7xl md:text-8xl lg:text-[9rem] xl:text-[11rem] font-medium tracking-tighter leading-[0.85] mb-6 text-white"
         >
           Mohamed <br />
           <span className="italic font-serif text-neutral-500">Ahmed</span>

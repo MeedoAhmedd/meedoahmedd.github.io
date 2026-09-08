@@ -27,7 +27,7 @@ export const ExperienceDetail = () => {
           className="mb-24 max-w-4xl"
         >
           <p className="text-xs font-mono uppercase tracking-widest text-neutral-600 mb-4">Experience</p>
-          <h1 className="text-5xl md:text-8xl font-medium tracking-tighter leading-[0.9] mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter leading-[0.9] mb-6">
             {role.company}
           </h1>
           <div className="flex flex-wrap items-baseline gap-x-6 gap-y-2 mb-10">

@@ -19,7 +19,7 @@ export const About = () => {
           <div className="h-px w-32 bg-gradient-to-r from-white/30 to-transparent" />
         </div>
 
-        <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-20 items-start">
+        <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-20 items-start">
 
           {/* Text Content */}
           <div className="relative z-10">
@@ -28,7 +28,7 @@ export const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="text-5xl md:text-8xl font-medium tracking-tighter mb-12 leading-[0.9]"
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter mb-12 leading-[0.9]"
             >
               Building things <br />
               <span className="italic font-serif text-neutral-500">that actually work.</span>

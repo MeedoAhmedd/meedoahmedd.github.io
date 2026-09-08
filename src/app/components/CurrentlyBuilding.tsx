@@ -37,7 +37,7 @@ export const CurrentlyBuilding = () => {
                 <span className="text-xs font-mono uppercase tracking-widest text-violet-400">In Progress</span>
               </div>
 
-              <h3 className="text-5xl md:text-7xl font-medium tracking-tighter mb-4">
+              <h3 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tighter mb-4">
                 Workflow Engine
               </h3>
               <p className="text-xs font-mono uppercase tracking-widest text-neutral-500 mb-8">

@@ -17,7 +17,7 @@ export const Projects = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-24 flex flex-col md:flex-row justify-between items-end gap-8"
+          className="mb-24 flex flex-col md:flex-row justify-between md:items-end gap-8"
         >
           <div>
             <div className="flex items-center gap-6 mb-8">
@@ -28,7 +28,7 @@ export const Projects = () => {
 
               <div className="h-px w-32 bg-gradient-to-r from-white/30 to-transparent" />
             </div>
-            <h2 className="text-5xl md:text-8xl font-medium tracking-tighter leading-[0.9]">
+            <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter leading-[0.9]">
               Selected <br />
               <span className="italic font-serif text-neutral-500">Work</span>
             </h2>

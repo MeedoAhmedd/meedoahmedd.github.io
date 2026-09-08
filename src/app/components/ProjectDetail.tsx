@@ -39,15 +39,15 @@ export const ProjectDetail = () => {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-10">
-            <div>
+          <div className="flex flex-col md:flex-row justify-between md:items-end gap-6 md:gap-8 mb-10">
+            <div className="min-w-0">
               <p className="text-xs font-mono uppercase tracking-widest text-neutral-600 mb-4">{project.category}</p>
-              <h1 className="text-6xl md:text-9xl font-medium tracking-tighter leading-[0.9]">
+              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-9xl font-medium tracking-tighter leading-[0.9] break-words">
                 {project.title}
               </h1>
               <p className="text-neutral-500 font-light mt-3 text-lg italic font-serif">{(project as any).subtitle}</p>
             </div>
-            <span className={`font-mono text-xs px-4 py-2 border mb-2 ${
+            <span className={`shrink-0 self-start md:self-auto font-mono text-xs px-4 py-2 border mb-2 ${
               project.status === 'IN PROGRESS'
                 ? 'border-violet-500/40 text-violet-300'
                 : project.status === 'PROTOTYPE'
@@ -73,7 +73,7 @@ export const ProjectDetail = () => {
         </motion.div>
 
         {/* Content Grid */}
-        <div className="grid md:grid-cols-[1fr_2fr] gap-24 mb-32">
+        <div className="grid md:grid-cols-[1fr_2fr] gap-12 lg:gap-24 mb-32">
 
           {/* Sidebar */}
           <div className="space-y-10">
@@ -196,7 +196,7 @@ export const ProjectDetail = () => {
             <Link to={`/work/${nextProject.slug}`} className="group block">
               <span className="text-xs font-mono uppercase tracking-widest text-neutral-600 block mb-4">Next Project</span>
               <div className="flex items-baseline justify-between">
-                <span className="text-5xl md:text-8xl font-medium tracking-tighter group-hover:text-neutral-400 transition-colors">
+                <span className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter group-hover:text-neutral-400 transition-colors">
                   {nextProject.title}
                 </span>
                 <ArrowUpRight className="w-10 h-10 text-neutral-600 group-hover:text-white transition-colors" />

@@ -62,7 +62,7 @@ export const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="text-6xl md:text-9xl font-medium tracking-tighter leading-none"
+              className="text-4xl sm:text-6xl md:text-7xl lg:text-9xl font-medium tracking-tighter leading-none"
             >
               What I <br />
               <span className="italic font-serif text-neutral-500">Build</span>

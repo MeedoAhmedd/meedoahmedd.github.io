@@ -15,7 +15,7 @@ export const Footer = () => {
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[60vw] h-[30vh] bg-violet-900/10 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="container mx-auto relative z-10">
-        <div className="grid md:grid-cols-[1.5fr_1fr] gap-20 mb-32">
+        <div className="grid md:grid-cols-[1.5fr_1fr] gap-12 lg:gap-20 mb-24 md:mb-32">
 
           <div>
             <div className="flex items-center gap-6 mb-16">
@@ -30,7 +30,7 @@ export const Footer = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-6xl md:text-9xl font-medium tracking-tighter leading-[0.9] mb-16"
+              className="text-4xl sm:text-6xl md:text-7xl lg:text-9xl font-medium tracking-tighter leading-[0.9] mb-16"
             >
               {"Let's"} <br />
               <span className="italic font-serif text-neutral-500">Build Something.</span>

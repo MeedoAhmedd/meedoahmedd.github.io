@@ -23,7 +23,7 @@ export const Experience = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="text-5xl md:text-7xl font-medium tracking-tighter leading-[0.9]"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tighter leading-[0.9]"
           >
             Where I've <br />
             <span className="italic font-serif text-neutral-500">Worked</span>
