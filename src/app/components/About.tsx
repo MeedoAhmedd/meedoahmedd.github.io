@@ -77,18 +77,14 @@ export const About = () => {
             {/* Identity Tags */}
             <div className="mt-16 pt-16 border-t border-white/5">
               <span className="text-xs font-mono uppercase tracking-widest text-neutral-600 block mb-6">Education</span>
-              <div className="grid grid-cols-3 gap-8 mb-12">
+              <div className="grid grid-cols-2 gap-8 mb-12">
                 <div className="space-y-2 border-r border-white/5">
                   <h4 className="text-2xl font-light text-white font-mono">GIU</h4>
                   <p className="text-xs uppercase tracking-widest text-neutral-500">University</p>
                 </div>
-                <div className="space-y-2 border-r border-white/5">
+                <div className="space-y-2">
                   <h4 className="text-2xl font-light text-white font-mono">CS</h4>
                   <p className="text-xs uppercase tracking-widest text-neutral-500">Degree</p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-2xl font-light text-white font-mono">2025</h4>
-                  <p className="text-xs uppercase tracking-widest text-neutral-500">Current Year</p>
                 </div>
               </div>
 

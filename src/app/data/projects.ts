@@ -70,7 +70,7 @@ export const projects: Project[] = [
       // Add real screenshots later, e.g.:
       // { src: asset("projects/giu-nexus-dashboard.jpg"), caption: "Admin dashboard" },
     ],
-    year: "2024",
+    year: "2026",
     description:
       "A MERN-based career platform connecting students, recruiters, and administrators, with AI-powered job recommendations built on Hugging Face sentence embeddings and cosine similarity.",
     contribution:
@@ -99,7 +99,7 @@ export const projects: Project[] = [
     status: "IN PROGRESS",
     image: asset("projects/workflow-engine.jpg"),
     gallery: [],
-    year: "2025",
+    year: "2026",
     description:
       "A Java Spring Boot workflow engine I am currently building, modelling workflows, states, transitions, and workflow instances from the ground up.",
     contribution:
@@ -127,7 +127,7 @@ export const projects: Project[] = [
     status: "PROTOTYPE",
     image: asset("projects/haunted-forest.jpg"),
     gallery: [],
-    year: "2024",
+    year: "2026",
     description:
       "A Unity/C# 3D horror and adventure project. The player searches for a missing child, follows environmental clues, and must find three keys to open a cave gate.",
     contribution:
@@ -147,7 +147,7 @@ export const projects: Project[] = [
     status: "PROTOTYPE",
     image: asset("projects/haystack-needle.jpg"),
     gallery: [],
-    year: "2024",
+    year: "2026",
     description:
       "A first-person 3D search-game concept: a huge farm covered in hay, and a single hidden needle to find. An experiment in scale and the absurdity of an impossible search.",
     contribution:

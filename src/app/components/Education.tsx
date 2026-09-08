@@ -29,7 +29,7 @@ export const Education = () => {
               German International <br />University
             </h3>
             <p className="text-sm font-mono uppercase tracking-widest text-violet-400/80 mb-6">B.Sc. Computer Science</p>
-            <p className="text-neutral-500 font-light font-mono text-sm">[ Add graduation year / current year ]</p>
+            <p className="text-neutral-500 font-light font-mono text-sm">Expected 2027</p>
           </motion.div>
 
           <motion.div
