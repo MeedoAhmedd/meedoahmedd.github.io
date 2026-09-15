@@ -146,7 +146,7 @@ export const projects: Project[] = [
     subtitle: "Cozy 3D Room Experience — Your Safe Place",
     category: "EXPERIMENTAL",
     status: "PROTOTYPE",
-    image: asset("projects/lost-pages.svg"),
+    image: asset("projects/lost-pages.jpg"),
     gallery: [],
     year: "2026",
     description:
