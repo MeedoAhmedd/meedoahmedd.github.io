@@ -7,8 +7,8 @@ const techGroups = [
     items: [
       { name: "Java", projects: ["Workflow Engine", "University Projects"] },
       { name: "C++", projects: ["University Projects"] },
-      { name: "JavaScript", projects: ["GIU Nexus"] },
-      { name: "C#", projects: ["Haunted Forest", "5M Haystack"] },
+      { name: "JavaScript", projects: ["GIU Nexus", "Lost Pages"] },
+      { name: "C#", projects: ["Haunted Forest"] },
       { name: "Lua", projects: [] }
     ]
   },
@@ -40,8 +40,9 @@ const techGroups = [
   {
     label: "Game Dev",
     items: [
-      { name: "Unity", projects: ["Haunted Forest", "5M Haystack"] },
-      { name: "C# Gameplay", projects: ["Haunted Forest", "5M Haystack"] }
+      { name: "Unity", projects: ["Haunted Forest"] },
+      { name: "C# Gameplay", projects: ["Haunted Forest"] },
+      { name: "Three.js / WebGL", projects: ["Lost Pages"] }
     ]
   },
   {

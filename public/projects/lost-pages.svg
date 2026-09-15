@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-label="Lost Pages — cozy 3D room, illustrative cover">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#100a1f"/>
+      <stop offset="0.55" stop-color="#150f26"/>
+      <stop offset="1" stop-color="#0b0812"/>
+    </linearGradient>
+    <radialGradient id="warmGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f5b76e" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#f5b76e" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#f5b76e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lampGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd9a0" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffd9a0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c1430"/>
+      <stop offset="1" stop-color="#0d0917"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241a3c"/>
+      <stop offset="1" stop-color="#160f27"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#ffffff" stroke-opacity="0.03"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#sky)"/>
+  <rect width="1600" height="1200" fill="url(#grid)"/>
+
+  <!-- back wall -->
+  <rect x="0" y="0" width="1600" height="820" fill="url(#wall)"/>
+  <!-- floor -->
+  <polygon points="0,820 1600,820 1600,1200 0,1200" fill="url(#floor)"/>
+
+  <!-- window with night sky + moon -->
+  <g>
+    <rect x="130" y="190" width="360" height="440" rx="6" fill="#0a0714"/>
+    <rect x="130" y="190" width="360" height="440" rx="6" fill="none" stroke="#3a2c5a" stroke-width="10"/>
+    <line x1="310" y1="190" x2="310" y2="630" stroke="#3a2c5a" stroke-width="8"/>
+    <line x1="130" y1="410" x2="490" y2="410" stroke="#3a2c5a" stroke-width="8"/>
+    <circle cx="380" cy="290" r="46" fill="#e9dfc9" opacity="0.9"/>
+    <circle cx="365" cy="278" r="46" fill="#0a0714" opacity="0.55"/>
+    <circle cx="200" cy="250" r="2" fill="#ffffff" opacity="0.6"/>
+    <circle cx="240" cy="330" r="1.6" fill="#ffffff" opacity="0.5"/>
+    <circle cx="430" cy="240" r="1.6" fill="#ffffff" opacity="0.5"/>
+    <circle cx="180" cy="470" r="1.6" fill="#ffffff" opacity="0.4"/>
+    <circle cx="440" cy="520" r="2" fill="#ffffff" opacity="0.5"/>
+    <!-- warm reflection pooling on the floor below the window -->
+    <ellipse cx="310" cy="840" rx="220" ry="60" fill="url(#warmGlow)"/>
+  </g>
+
+  <!-- desk lamp glow, right side -->
+  <ellipse cx="1260" cy="560" rx="260" ry="220" fill="url(#lampGlow)" opacity="0.5"/>
+
+  <!-- upright piano silhouette, left-of-center -->
+  <g transform="translate(560,540)">
+    <!-- back panel + music stand -->
+    <rect x="30" y="0" width="240" height="150" rx="6" fill="#1c1430" stroke="#3a2c5a" stroke-width="3"/>
+    <rect x="60" y="20" width="180" height="100" rx="3" fill="#140f22" stroke="#3a2c5a" stroke-width="2"/>
+    <!-- body -->
+    <rect x="0" y="150" width="300" height="70" rx="4" fill="#140f22" stroke="#3a2c5a" stroke-width="4"/>
+    <!-- keybed -->
+    <rect x="14" y="190" width="272" height="44" rx="2" fill="#efe7d8"/>
+    <g fill="#1a1430">
+      <rect x="20" y="190" width="5" height="44"/>
+      <rect x="36" y="190" width="5" height="44"/>
+      <rect x="52" y="190" width="5" height="44"/>
+      <rect x="68" y="190" width="5" height="44"/>
+      <rect x="84" y="190" width="5" height="44"/>
+      <rect x="100" y="190" width="5" height="44"/>
+      <rect x="116" y="190" width="5" height="44"/>
+      <rect x="132" y="190" width="5" height="44"/>
+      <rect x="148" y="190" width="5" height="44"/>
+      <rect x="164" y="190" width="5" height="44"/>
+      <rect x="180" y="190" width="5" height="44"/>
+      <rect x="196" y="190" width="5" height="44"/>
+      <rect x="212" y="190" width="5" height="44"/>
+      <rect x="228" y="190" width="5" height="44"/>
+      <rect x="244" y="190" width="5" height="44"/>
+      <rect x="260" y="190" width="5" height="44"/>
+      <rect x="276" y="190" width="5" height="44"/>
+    </g>
+    <!-- black keys -->
+    <g fill="#0a0714">
+      <rect x="28" y="190" width="9" height="26"/>
+      <rect x="44" y="190" width="9" height="26"/>
+      <rect x="76" y="190" width="9" height="26"/>
+      <rect x="92" y="190" width="9" height="26"/>
+      <rect x="108" y="190" width="9" height="26"/>
+      <rect x="140" y="190" width="9" height="26"/>
+      <rect x="156" y="190" width="9" height="26"/>
+      <rect x="188" y="190" width="9" height="26"/>
+      <rect x="204" y="190" width="9" height="26"/>
+      <rect x="220" y="190" width="9" height="26"/>
+      <rect x="252" y="190" width="9" height="26"/>
+      <rect x="268" y="190" width="9" height="26"/>
+    </g>
+    <!-- legs -->
+    <rect x="16" y="220" width="10" height="34" fill="#140f22"/>
+    <rect x="274" y="220" width="10" height="34" fill="#140f22"/>
+    <!-- stool -->
+    <g transform="translate(115,270)">
+      <rect x="0" y="0" width="80" height="14" rx="3" fill="#140f22" stroke="#3a2c5a" stroke-width="3"/>
+      <rect x="10" y="14" width="7" height="40" fill="#140f22"/>
+      <rect x="63" y="14" width="7" height="40" fill="#140f22"/>
+    </g>
+  </g>
+
+  <!-- notebook resting on the piano's keybed lid, catching the lamp glow -->
+  <g transform="translate(950,715) rotate(-5)">
+    <rect x="0" y="0" width="130" height="36" rx="3" fill="#3a2440"/>
+    <rect x="3" y="3" width="124" height="30" rx="2" fill="#4a2f52"/>
+    <path d="M15 18 h34 M15 23 h24" stroke="#e9c9a0" stroke-width="1.6" opacity="0.75" stroke-linecap="round"/>
+  </g>
+
+  <!-- floor glow pools under the lamp -->
+  <ellipse cx="1260" cy="900" rx="240" ry="50" fill="url(#warmGlow)" opacity="0.7"/>
+
+  <!-- title plate -->
+  <g transform="translate(800 1040)">
+    <text x="0" y="0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="72" fill="#f6ecd9">Lost Pages</text>
+    <text x="0" y="42" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="20" letter-spacing="5" fill="#a998c4">YOUR SAFE PLACE</text>
+  </g>
+
+  <rect x="0" y="0" width="1600" height="1200" fill="#000000" opacity="0.06"/>
+</svg>
